@@ -3,12 +3,12 @@ import cv2
 import time
 import os
 
-# Label: 00000 là ko cầm tiền, còn lại là các mệnh giá
-label = "200000"
+# Label: Tên người dùng
+label = "vutrhuy81"
 
 cap = cv2.VideoCapture(0)
 
-# Biến đếm, để chỉ lưu dữ liệu sau khoảng 60 frame, tránh lúc đầu chưa kịp cầm tiền lên
+# Biến đếm, để chỉ lưu dữ liệu sau khoảng 50 frame, tránh lúc đầu chưa kịp cầm tiền lên
 i=0
 while(True):
     # Capture frame-by-frame
@@ -23,8 +23,8 @@ while(True):
     cv2.imshow('frame',frame)
 
     # Lưu dữ liệu
-    if i>=1151:
-        print("Số ảnh capture = ",i-60)
+    if i>=50:
+        print("Số ảnh capture = ",i-50)
         # Tạo thư mục nếu chưa có
         if not os.path.exists('data/' + str(label)):
             os.mkdir('data/' + str(label))
@@ -32,7 +32,7 @@ while(True):
         cv2.imwrite('data/' + str(label) + "/" + str(i) + ".png",frame)
 
     #if cv2.waitKey(1) & 0xFF == ord('q'):
-    if i==1200:
+    if i==100:
         break
 
 # When everything done, release the capture
