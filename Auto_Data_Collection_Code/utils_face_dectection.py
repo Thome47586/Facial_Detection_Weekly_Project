@@ -9,8 +9,10 @@ net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 
 IMG_WIDTH, IMG_HEIGHT = 416, 416
+# global x, y, w, h
 
 def take_faces(frame):
+  x, y, w, h = 0,0,0,0
 ##############################################################################################################
 
   # Making blob object from original image
@@ -29,7 +31,7 @@ def take_faces(frame):
 
   ##############################################################################################################
 
-  blobb = blob.reshape(blob.shape[2] * blob.shape[1], blob.shape[3], 1) 
+  # blobb = blob.reshape(blob.shape[2] * blob.shape[1], blob.shape[3], 1) 
   # print(blobb.shape)
 
   ##############################################################################################################
@@ -88,6 +90,7 @@ def take_faces(frame):
       cv2.putText(result, f'Number of face detected: {number_of_faces}', 
                   (10, 10), cv2.FONT_HERSHEY_COMPLEX, 0.5, (0,0,255) ,1)
     # frame is now the image capture by the webcam (one frame of the video)
+  
   return x, y, w, h, result
 
 
