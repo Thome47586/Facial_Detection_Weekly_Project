@@ -13,8 +13,6 @@ This is small group project of four members.
 
 The project is to detect our team members face and name. We use the OpenCV, YOLO and Deep Learning model to train and detect our team member faces. 
 
-<b>Model diagram</b>
-
 # II. Requirement and Dataset
 
 ## Requirements
@@ -57,8 +55,7 @@ Or you can download it from Google Drive link: [Link](https://drive.google.com/f
 
 The dataset was collected by capturing image from the webcam of each team members. The code to auto collect the image is in the following directories:
 
-+ For using in local: [__Link__]
-+ For using on Google Colab: [__Link__]
++ For using on Google Colab: [__Link__](https://github.com/tuanle163/Facial_Detection_Weekly_Project/tree/main/Auto_Data_Collection_Code)
 
 The code will capture an image on webcam and using YOLOV3 model to finding the human face in the image. It is then crop out the face and save it in dataset folder. 
 
