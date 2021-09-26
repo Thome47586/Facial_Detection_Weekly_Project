@@ -82,9 +82,13 @@ For the final step, the boundary boxes with high confidence scores (more than 0.
 
 ###  Load and use the pre-trained YOLO model. 
 MODEL = 'yolo\yolov3-face.cfg'
+
 WEIGHT = 'yolo\yolov3-wider_16000.weights'
+
 net = cv2.dnn.readNetFromDarknet(MODEL, WEIGHT)
+
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
+
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 
 ### Get the detection from YOLO model.
