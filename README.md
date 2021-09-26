@@ -50,6 +50,8 @@ The dataset we used to train our model can be found here: https://github.com/tua
 Or you can download it from Google Drive link: [Link](https://drive.google.com/file/d/1NYiarTKMgdsrWHXcRhmVblyPY3kJmuvj/view?usp=sharing)
 
 # III. Model Structure
+![image](https://user-images.githubusercontent.com/29221802/134808537-bd1df0a8-5ebc-4f36-ad0b-13a1a2ebd38f.png)
+
 ## Image Preprocessing
 
 
