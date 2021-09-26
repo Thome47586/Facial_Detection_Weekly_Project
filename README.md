@@ -7,10 +7,10 @@ Display facial detection with 3 tabs on VS code:
 		- In charge inputs and outputs
 		- Coordinate Yolo v3 and predict_face to organize
 	b. Workflow
-		- Main: 			Use library OpenCV open webcam to take frames
-		- Yolo V3: 			Call and push frames into tab Yolo V3 take out a best bounding box
-		- Main: 			Identify coordinates point of the box
-		- Main: 		  	Determine rectangle of face to display and crop this face to predict 
+		- Main: 		Use library OpenCV open webcam to take frames
+		- Yolo V3: 		Call and push frames into tab Yolo V3 take out a best bounding box
+		- Main: 		Identify coordinates point of the box
+		- Main:			Determine rectangle of face to display and crop this face to predict 
 		- Model_ predict: 	Transfer crop face into tab Model_predict to define who are they and take the name to display
 # 2. Yolo_V3
 	a. Objective:
