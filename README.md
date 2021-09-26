@@ -81,31 +81,29 @@ For the final step, the boundary boxes with high confidence scores (more than 0.
 ![image](https://user-images.githubusercontent.com/29221802/134808398-8d49488a-8334-4c67-afc8-7bce3e291996.png)
 
 ###  Load and use the pre-trained YOLO model. 
+```terminal
 MODEL = 'yolo\yolov3-face.cfg'
-
 WEIGHT = 'yolo\yolov3-wider_16000.weights'
-
 net = cv2.dnn.readNetFromDarknet(MODEL, WEIGHT)
-
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
-
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
+```
 
 ### Get the detection from YOLO model.
+```terminal
 IMG_WIDTH, IMG_HEIGHT = 416, 416
-
-#### Making blob object from original image
+# Making blob object from original image
 blob = cv2.dnn.blobFromImage(frame, 1/255, (IMG_WIDTH, IMG_HEIGHT),[0, 0, 0], 1, crop=False)
 
-#### Set model input
+# Set model input
 net.setInput(blob)
 
-#### Define the layers that we want to get the outputs from
+# Define the layers that we want to get the outputs from
 output_layers = net.getUnconnectedOutLayersNames()
 
-#### Run 'prediction'
+# Run 'prediction'
 outs = net.forward(output_layers)
-
+```
 
 ## Classification Model
 
