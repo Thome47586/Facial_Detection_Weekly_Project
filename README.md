@@ -92,6 +92,7 @@ net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 ### Get the detection from YOLO model.
 ```terminal
 IMG_WIDTH, IMG_HEIGHT = 416, 416
+
 # Making blob object from original image
 blob = cv2.dnn.blobFromImage(frame, 1/255, (IMG_WIDTH, IMG_HEIGHT),[0, 0, 0], 1, crop=False)
 
