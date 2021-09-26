@@ -62,9 +62,11 @@ Object classification systems are used by Artificial Intelligence (AI) programs 
 ### How does YOLOV3 work?
 YOLO is a Convolutional Neural Network (CNN) for performing object detection in real- time. CNNS are classifier-based systems that can process input images as structured arrays identify patterns between them. YOLO has the advantage of being much faster than other networks and still maintains accuracy. 
 ![image](https://user-images.githubusercontent.com/29221802/134807996-41826598-3c62-4886-b960-2b7ffa5705fd.png)
+
 It allows the model to look at the whole image at test time, so its predictions are convolutional network algorithms "score" regions based on their similarities to predefined classes. 
 High-scoring regions are noted as positive detections of whatever class they most closely identify with. example, of traffic, YOLO can be used to detect different kinds of vehicles depending on which regions of the video score highly in comparison to predefined classes of vehicles.
 ![image](https://user-images.githubusercontent.com/29221802/134808079-1764c4e3-6a4d-478f-9202-2525cf05c076.png)
+
 ### Class Confidence and Box Confidence Scores 
 Each bounding The confidence Score is the value of how probable a class is contained by that box, as well as how accurate that bounding box is. 
 The bounding box width and height (w and h) is first set to the width and height of the image given. Then, x and y are offsets of the cell in question and all 4 bounding box between 0 and 1. Then, each cell has 20 conditional class probabilities implemented by the YOLOV3 algorithm. 
