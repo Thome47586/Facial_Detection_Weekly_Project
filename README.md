@@ -132,8 +132,6 @@ Each bounding The confidence Score is the value of how probable a class is conta
 
 The bounding box width and height (w and h) is first set to the width and height of the image given. Then, x and y are offsets of the cell in question and all 4 bounding box between 0 and 1. Then, each cell has 20 conditional class probabilities implemented by the YOLOV3 algorithm. 
 
-The class confidence score for each final boundary box used as a positive prediction is conditional class probability in this context is the probability that the detected object is part of certain (the class object of interest's identification), prediction, therefore, has 3 values of h, w, and depth. 
-
 For the final step, the boundary boxes with high confidence scores (more than 0.25) are kept as final predictions.
 
 ![image](https://user-images.githubusercontent.com/29221802/134808398-8d49488a-8334-4c67-afc8-7bce3e291996.png)
