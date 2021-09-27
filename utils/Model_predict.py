@@ -3,9 +3,8 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 
-
 # Load model VGG16 face to predict
-model = tf.keras.models.load_model('Facial_Detection/Model/Duy_face_recognition.h5')
+model = tf.keras.models.load_model('model/Duy_face_recognition.h5')
 labels = ['Duy', 'Thome', 'TuanLe', 'Vutrhuy81']
 
 # function predict

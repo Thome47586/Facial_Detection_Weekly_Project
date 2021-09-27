@@ -1,14 +1,14 @@
 import cv2
 
+
 # Load YOLO 3
-MODEL = 'Facial_Detection/yolo/yolov3-face.cfg'
-WEIGHT = 'Facial_Detection/yolo/yolov3-wider_16000.weights'
+MODEL = 'model/yolov3-face.cfg'
+WEIGHT = 'model/yolov3-wider_16000.weights'
 
 net = cv2.dnn.readNetFromDarknet(MODEL, WEIGHT)
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 IMG_WIDTH, IMG_HEIGHT = 416, 416
-
 
 def yolo_v3(frame):
  # Making blob object from original image
