@@ -111,7 +111,7 @@ __Please, download the models and weight from the links above and save to <span 
 
 YOLOV3 (You Only Look Once, Version 3) is real-time object detection algorithm that identifies specific objects in videos, live feeds, or images. YOLO uses features learned by a deep convolutional neural network to detect an object. Versions 1-3 of YOLO were created by Joseph Redmon and Ali Farhadi. 
 
-The first version of YOLO was created in 2016, and version 3, which is discussed extensively in this article, was made two years later in 2018. YOLOV3 is an improved version of YOLO and YOLOV2. YOLO is implemented using the Keras or OpenCV deep learning libraries.
+The first version of YOLO was created in 2016, and version 3, which was made two years later in 2018. YOLOV3 is an improved version of YOLO and YOLOV2. YOLO is implemented using the Keras or OpenCV deep learning libraries.
 
 Object classification systems are used by Artificial Intelligence (AI) programs to perceive specific objects in class as subjects of interest. The systems sort objects in images into groups where objects with similar characteristics are placed together, while others neglected.
 
@@ -131,10 +131,6 @@ High-scoring regions are noted as positive detections of whatever class they mos
 Each bounding The confidence Score is the value of how probable a class is contained by that box, as well as how accurate that bounding box is. 
 
 The bounding box width and height (w and h) is first set to the width and height of the image given. Then, x and y are offsets of the cell in question and all 4 bounding box between 0 and 1. Then, each cell has 20 conditional class probabilities implemented by the YOLOV3 algorithm. 
-
-The class confidence score for each final boundary box used as a positive prediction is conditional class probability in this context is the probability that the detected object is part of certain (the class object of interest's identification), prediction, therefore, has 3 values of h, w, and depth. 
-
-There is some math that then takes place involving spatial dimensions of the images and the tensors used in order to produce boundary box predictions, but that is complicated. If you are interested in learning what happens during this stage, I suggest the YOLOV3 Arxiv paper linked at the end of this article. 
 
 For the final step, the boundary boxes with high confidence scores (more than 0.25) are kept as final predictions.
 
