@@ -111,7 +111,7 @@ __Please, download the models and weight from the links above and save to <span 
 
 YOLOV3 (You Only Look Once, Version 3) is real-time object detection algorithm that identifies specific objects in videos, live feeds, or images. YOLO uses features learned by a deep convolutional neural network to detect an object. Versions 1-3 of YOLO were created by Joseph Redmon and Ali Farhadi. 
 
-The first version of YOLO was created in 2016, and version 3, which is discussed extensively in this article, was made two years later in 2018. YOLOV3 is an improved version of YOLO and YOLOV2. YOLO is implemented using the Keras or OpenCV deep learning libraries.
+The first version of YOLO was created in 2016, and version 3, which was made two years later in 2018. YOLOV3 is an improved version of YOLO and YOLOV2. YOLO is implemented using the Keras or OpenCV deep learning libraries.
 
 Object classification systems are used by Artificial Intelligence (AI) programs to perceive specific objects in class as subjects of interest. The systems sort objects in images into groups where objects with similar characteristics are placed together, while others neglected.
 
