@@ -93,7 +93,7 @@ The dataset has 4 classes:
 ## __Model files__
 YOLOv3 model file link:
 + Model: [Link](https://drive.google.com/file/d/1g9TarspT_H5wITwHYm5wLZLoofdsN3np/view?usp=sharing)
-+ Weights: [Link](https://drive.google.com/file/d/1g9TarspT_H5wITwHYm5wLZLoofdsN3np/view?usp=sharing)
++ Weights: [Link](https://drive.google.com/file/d/1nFexKK2fRwWCB0vZmhpXML-h5FC_jCu7/view?usp=sharing)
 
 VGGFace model file link:
 + Model: [__Link__](https://drive.google.com/file/d/1fnPAz_Mu-_at2BidQE_GdDGsIGxFrwOq/view?usp=sharing)
