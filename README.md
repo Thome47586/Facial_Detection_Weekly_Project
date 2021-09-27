@@ -9,13 +9,38 @@ __Authors:__
  + __Vu Tran Huy__: https://github.com/vutrhuy81
  
 # I. Overview
-This is small group project of four members. 
+ The project is to detect our team members face and name. We use the OpenCV, YOLO and VGGFace model to train and detect our team member faces.
+ + Total team members: 4
 
-The project is to detect our team members face and name. We use the OpenCV, YOLO and Deep Learning model to train and detect our team member faces. 
+__Repo structure__
+```
+main.py
+
+misc.ipynb
+
+/dataset
+    |
+    |/dataset.zip
+
+/Auto_Data_Collection_Code
+    |
+    |/Auto_Webcam_Capture.iypnb
+
+/utils
+    |
+    |/Model_predict.py
+    |/yolov3.py
+
+/env
+    |
+    |/M1_facial_detection.yml
+
+/model
+```
 
 # II. Requirement and Dataset
 
-## Requirements
+## __Requirements__
 Following packages that you need to install:
 
 + python>=3.8
@@ -30,7 +55,7 @@ Then git clone our repo:
 git clone https://github.com/tuanle163/Facial_Detection_Weekly_Project
 ```
 
-You can create an Anaconda environment using our following __.yml__ files:
+OR, You can create an Anaconda environment using our following __.yml__ files:
 
 + __Macbook M1 (ARM64 CPU):__ 
 
@@ -38,16 +63,16 @@ You can create an Anaconda environment using our following __.yml__ files:
 conda env create create -f ./env/M1_facial_detection.yml
 ```
 
-+ __Macbook Intel CPU:__
++ __Macbook Intel CPU: (Updating)__
 ```terminal
 conda env create create -f ./env/MacIntel_facial_detection.yml
 ```
-+ __Window Intel CPU:__
++ __Window Intel CPU: (Updating)__
 ```terminal
 conda env create create -f ./env/WinIntel_facial_detection.yml
 ```
 
-## Dataset
+## __Dataset__
 
 The dataset we used to train our model can be found here: https://github.com/tuanle163/Facial_Detection_Weekly_Project/tree/main/dataset
 
@@ -64,6 +89,17 @@ The dataset has 4 classes:
 + __Thome:__ 611 images
 + __Duy:__ 600 images
 + __Vutrhuy81:__ 600 images
+
+## __Model files__
+YOLOv3 model file link:
++ Model: [Link](https://drive.google.com/file/d/1g9TarspT_H5wITwHYm5wLZLoofdsN3np/view?usp=sharing)
++ Weights: [Link](https://drive.google.com/file/d/1g9TarspT_H5wITwHYm5wLZLoofdsN3np/view?usp=sharing)
+
+VGGFace model file link:
++ Model: [__Link__](https://drive.google.com/file/d/1fnPAz_Mu-_at2BidQE_GdDGsIGxFrwOq/view?usp=sharing)
+
+__Please, download the models and weight from the links above and save to <span style="color:Tomato;">*/model*</span> folder__
+
 
 # III. Model Structure
 ![image](https://user-images.githubusercontent.com/29221802/134808537-bd1df0a8-5ebc-4f36-ad0b-13a1a2ebd38f.png)
